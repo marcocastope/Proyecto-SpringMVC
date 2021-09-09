@@ -5,7 +5,7 @@
 <html lang="es">
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Home</title>
 <!-- Bootstrap icons-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
@@ -86,18 +86,16 @@
 				<div class="col-lg-6 order-lg-2 text-white showcase-img"
 					style="background-image: url('${urlPublic}/assets/img/medioambiente-1.jpeg')"></div>
 				<div class="col-lg-6 order-lg-1 my-auto showcase-text">
-					<h2>Cuida el planeta</h2>
-					<p class="lead mb-0">When you use a theme created by Start
-						Bootstrap, you know that the theme will look great on any device,
-						whether it's a phone, tablet, or desktop the page will behave
-						responsively!</p>
+					<h2>Objetivo de este sistema</h2>
+					<p class="lead mb-0">Cuidar el medio ambiente de la
+						contaminación que genera el arrojo de basura en la via publica.</p>
 				</div>
 			</div>
 			<div class="row g-0">
 				<div class="col-lg-6 text-white showcase-img"
 					style="background-image: url('${urlPublic}/assets/img/medioambiente-2.jpeg')"></div>
 				<div class="col-lg-6 my-auto showcase-text">
-					<h2>Updated For Bootstrap 5</h2>
+					<h2>Beneficios que te brinda este sistema</h2>
 					<p class="lead mb-0">Newly improved, and full of great utility
 						classes, Bootstrap 5 is leading the way in mobile responsive web
 						development! All of the themes on Start Bootstrap are now using
@@ -108,7 +106,7 @@
 				<div class="col-lg-6 order-lg-2 text-white showcase-img"
 					style="background-image: url('${urlPublic}/assets/img/medioambiente-3.jpeg')"></div>
 				<div class="col-lg-6 order-lg-1 my-auto showcase-text">
-					<h2>Easy to Use & Customize</h2>
+					<h2>Cuida el medio ambiente</h2>
 					<p class="lead mb-0">Landing Page is just HTML and CSS with a
 						splash of SCSS for users who demand some deeper customization
 						options. Out of the box, just add your content and images, and

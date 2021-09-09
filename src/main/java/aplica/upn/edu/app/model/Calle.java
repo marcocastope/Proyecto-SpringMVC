@@ -2,15 +2,15 @@ package aplica.upn.edu.app.model;
 
 public class Calle {
 
-	private int id;
+	private int calleId;
 	private String direccion;
 
-	public int getId() {
-		return id;
+	public int getCalleId() {
+		return calleId;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setCalleId(int calleId) {
+		this.calleId = calleId;
 	}
 
 	public String getDireccion() {
@@ -23,7 +23,7 @@ public class Calle {
 
 	@Override
 	public String toString() {
-		return "Calle [id=" + id + ", direccion=" + direccion + "]";
+		return "Calle [calleId=" + calleId + ", direccion=" + direccion + "]";
 	}
 
 }

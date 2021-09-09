@@ -2,11 +2,12 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Nueva incidencia</title>
 <!-- Bootstrap icons-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
@@ -24,23 +25,33 @@
 	<jsp:include page="includes/navbar.jsp" />
 	<div class="container">
 		<h2>Nueva Incidencia</h2>
-		<form action="">
+		<form:form action="registrarIncidencia" method="post">
+
 			<div class="mb-3">
 				<label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
-				<textarea class="form-control" id="exampleFormControlTextarea1"
-					rows="3"></textarea>
+				<form:input class="form-control" id="exampleFormControlTextarea1"
+					path="descripcion" rows="3" />
 			</div>
+			
+			
 			<div class="input-group mb-3">
 				<label class="input-group-text" for="inputGroupSelect01">Ubicación</label>
-				<select class="form-select" id="inputGroupSelect01">
-					<option selected>Choose...</option>
+				<form:select class="form-select" id="inputGroupSelect01" 
+					path="calleId"  >
+					
+					<option selected>Seleccione</option>
+					 
 					<c:forEach items="${calles}" var="calle">
-						<option value="${calle.id}">${calle.direccion }</option>
+						<option value="${calle.calleId}">${calle.direccion }</option>
 					</c:forEach>
-				</select>
+					 
+					
+				</form:select>
 			</div>
-			<a type="submit" class="btn btn-primary btn-lg">Guardar</a>
-		</form>
+			 
+
+			<button type="submit" class="btn btn-primary btn-lg">Guardar</button>
+		</form:form>
 
 	</div>
 </body>
