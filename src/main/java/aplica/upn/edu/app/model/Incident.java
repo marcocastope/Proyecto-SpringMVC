@@ -2,14 +2,12 @@ package aplica.upn.edu.app.model;
 
 import java.util.Date;
 
-public class IncidenteCalle {
-
+public class Incident {
 	private int idincident;
-	private int street;
 	private String description;
 	private Date date;
-	private String address;
-	private String status;
+	private Street street;
+	private Status status;
 
 	public int getIdincident() {
 		return idincident;
@@ -17,14 +15,6 @@ public class IncidenteCalle {
 
 	public void setIdincident(int idincident) {
 		this.idincident = idincident;
-	}
-
-	public int getStreet() {
-		return street;
-	}
-
-	public void setStreet(int street) {
-		this.street = street;
 	}
 
 	public String getDescription() {
@@ -43,26 +33,26 @@ public class IncidenteCalle {
 		this.date = date;
 	}
 
-	public String getAddress() {
-		return address;
+	public Street getStreet() {
+		return street;
 	}
 
-	public void setAddress(String address) {
-		this.address = address;
+	public void setStreet(Street street) {
+		this.street = street;
 	}
 
-	public String getStatus() {
+	public Status getStatus() {
 		return status;
 	}
 
-	public void setStatus(String status) {
+	public void setStatus(Status status) {
 		this.status = status;
 	}
 
 	@Override
 	public String toString() {
-		return "IncidenteCalle [idincident=" + idincident + ", street=" + street + ", description=" + description
-				+ ", date=" + date + ", address=" + address + ", status=" + status + "]";
+		return "Incident [idincident=" + idincident + ", description=" + description + ", date=" + date + ", street="
+				+ street + ", status=" + status + "]";
 	}
 
 }

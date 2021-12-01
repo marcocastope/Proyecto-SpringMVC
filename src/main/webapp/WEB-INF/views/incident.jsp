@@ -30,25 +30,25 @@
 			<div class="mb-3">
 				<label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
 				<form:input class="form-control" id="exampleFormControlTextarea1"
-					path="descripcion" rows="3" />
+					path="description" rows="3" />
 			</div>
-			
-			
+
+
 			<div class="input-group mb-3">
 				<label class="input-group-text" for="inputGroupSelect01">Ubicación</label>
-				<form:select class="form-select" id="inputGroupSelect01" 
-					path="calleId"  >
-					
+				<form:select class="form-select" id="inputGroupSelect01"
+					path="street">
+
 					<option selected>Seleccione</option>
-					 
-					<c:forEach items="${calles}" var="calle">
-						<option value="${calle.calleId}">${calle.direccion }</option>
+
+					<c:forEach items="${streets}" var="street">
+						<option value="${street.idstreet}">${street.address }</option>
 					</c:forEach>
-					 
-					
+
+
 				</form:select>
 			</div>
-			 
+
 
 			<button type="submit" class="btn btn-primary btn-lg">Guardar</button>
 		</form:form>

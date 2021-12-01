@@ -33,10 +33,10 @@
 
 
 	<bean id="incidenciasDao"
-		class="aplica.upn.edu.app.dao.IncidenteDaoImp">
+		class="aplica.upn.edu.app.dao.IncidentDaoImp">
 		<property name="dataSource" ref="dataSource" />
 	</bean>
-	<bean id="callesDao" class="aplica.upn.edu.app.dao.CalleDaoImp">
+	<bean id="callesDao" class="aplica.upn.edu.app.dao.StreetDaoImp">
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 

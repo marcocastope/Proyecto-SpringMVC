@@ -25,9 +25,12 @@
 	<div class="container">
 		<h2>Detalles</h2>
 		<ul class="list-group">
-			<li class="list-group-item">Descripcion: ${ incidencia.descripcion}</li>
-			<li class="list-group-item">Fecha: 12-12-12</li>
-			<li class="list-group-item">Lugar: ca. 28 de Julio</li>
+			<li class="list-group-item">Descripcion: ${ incident.description}</li>
+
+			<li class="list-group-item">Fecha: <fmt:formatDate
+					value="${incident.date}" pattern="dd-MM-YYYY" /></li>
+
+			<li class="list-group-item">Lugar: ${incident.address}</li>
 		</ul>
 
 	</div>
